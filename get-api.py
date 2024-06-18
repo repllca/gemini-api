@@ -40,7 +40,9 @@ chat_session = model.start_chat(
   history=[
   ]
 )
-
-response = chat_session.send_message("INSERT_INPUT_HERE")
+#text to textを行う場合
+response = chat_session.send_message("what is meaning of life?")
 
 print(response.text)
+#video to textを行う場合
+model.gena.GenerativeModel("")
