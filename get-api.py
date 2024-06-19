@@ -45,4 +45,4 @@ response = chat_session.send_message("what is meaning of life?")
 
 print(response.text)
 #video to textを行う場合
-model.gena.GenerativeModel("")
+# model.gena.GenerativeModel("")
