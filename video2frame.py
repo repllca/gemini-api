@@ -37,7 +37,8 @@ for video_path in video_paths:
 
     model_name = "models/gemini-1.5-flash-latest"
     model = genai.GenerativeModel(model_name)
-    prompt = "動画の内容を要約してください"
+    prompt = "動画に映っている動物とその動物が何をしたかをシーン事に説明してください。映像の切り替わりや映っている動物が変わった所をシーンの変わり目とします。これらをcsvファイルの形で出力してください.csvの項目はシーンの開始時間、シーンの終了時間、映っている動物、動物が何をしているかでまとめてください."
+
     content = [prompt, uploaded_video]
     response = model.generate_content(content)
     print(response.text)
