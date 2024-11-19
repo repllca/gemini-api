@@ -3,9 +3,11 @@ import time
 import glob
 from dotenv import load_dotenv
 import os
-load_dotenv(".env")
+# load_dotenv(".env")
 #apiキーの読み込み
-API_KEY = os.getenv("GEMINI_API_KEY")
+# API_KEY = os.getenv("GEMINI_API_KEY")
+
+API_KEY = ""
 #ビデオファイルのパス読み込み
 
 genai.configure(api_key=API_KEY)
